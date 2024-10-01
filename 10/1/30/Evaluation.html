@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Evaluate these numbers</h4>
+    <p id="my3"></p>
+    <button onclick="myfun()">click</button>
+    <script>
+        function myfun(){
+            var x=50;
+            var y=15;
+            var a = eval("x-y") +"<br>";
+            var b = eval("x+y") +"<br>";
+            var result = a+b;
+            document.getElementById("my3").innerHTML=result;
+        }
+    </script>
+</body>
+</html>
