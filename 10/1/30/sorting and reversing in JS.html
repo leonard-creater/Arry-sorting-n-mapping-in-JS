@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Sorting in JS</h2>
+    <button onclick="asc()">Asc</button>
+    <button onclick="dsc()">Dsc</button>
+    <p id="my"></p>
+    <script>
+        var points=[65,40,5,7,69,32,36]
+        document.getElementById("my").innerHTML=points;
+        function asc(){
+            points.sort(function(a,b){return a-b});
+            document.getElementById("my").innerHTML=points;
+            
+        }
+        function dsc(){
+            points.sort(function(a,b){return b-a});
+            document.getElementById("my").innerHTML=points;
+        }
+    </script>
+</body>
+</html>
