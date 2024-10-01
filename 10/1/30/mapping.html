@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Mapping in JS</h4>
+    <p id="my1"></p>
+    <script>
+        var points=[50,60,70,80,91]
+        function myfun(set){
+            return set%5
+        }
+        var newnumbers=points.map(myfun);
+        document.getElementById("my1").innerHTML=newnumbers;
+    </script>
+</body>
+</html>
